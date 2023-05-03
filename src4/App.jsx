@@ -1,7 +1,6 @@
 import './App.css';
 import Nav from './components/nav/Nav';
 import ApiAccess from './components/apiAccess/ApiAccess';
-import Countdown from './components/countdown/Countdown';
 
 const arr = [
 	{
@@ -18,7 +17,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Nav />
-			<Countdown />
+			<ApiAccess />
 		</div>
 	);
 }

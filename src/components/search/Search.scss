@@ -1,0 +1,60 @@
+.search-content {
+	margin: 24px auto;
+
+	input {
+		height: 32px;
+		width: 400px;
+		border-radius: 16px;
+		border: 1px solid gray;
+		outline: none;
+		padding: 0 16px;
+		font-size: 16px;
+	}
+
+	.yt-videos {
+		.video-item {
+			display: flex;
+			width: 70%;
+			margin: 36px auto;
+			gap: 16px;
+			overflow: hidden;
+			height: 202px;
+
+			.yt-left {
+				.yt-iframe {
+					width: 360px;
+					height: 202px;
+					border-radius: 8px;
+				}
+			}
+
+			.yt-right {
+				text-align: left;
+				font-size: 13px;
+
+				.right-title {
+					font-size: 18px;
+					line-height: 26px;
+					padding-bottom: 2px;
+				}
+
+				.right-author {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+					padding: 16px 0px;
+
+					.avatar {
+						width: 24px;
+						height: 24px;
+						background: url('/src/assets/images/images.jpg') no-repeat center center / contain;
+					}
+				}
+
+				.right-description {
+					line-height: 18px;
+				}
+			}
+		}
+	}
+}

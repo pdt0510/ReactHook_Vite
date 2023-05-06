@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .search-content {
 	margin: 24px auto;
 
@@ -56,5 +57,16 @@
 				}
 			}
 		}
+=======
+.Search {
+	cursor: pointer;
+}
+
+.todo-item {
+	cursor: not-allowed;
+
+	&:hover {
+		background-color: antiquewhite;
+>>>>>>> 77f265cfc4b25279d3eb1a3b21c55895fe186407
 	}
 }

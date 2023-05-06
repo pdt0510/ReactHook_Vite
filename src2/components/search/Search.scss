@@ -1,0 +1,11 @@
+.Search {
+	cursor: pointer;
+}
+
+.todo-item {
+	cursor: not-allowed;
+
+	&:hover {
+		background-color: antiquewhite;
+	}
+}

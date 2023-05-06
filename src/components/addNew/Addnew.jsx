@@ -2,6 +2,10 @@ import './addnew.scss';
 import { useParams, useNavigate, Link, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
+<<<<<<< HEAD
+=======
+// v34xx1
+>>>>>>> 77f265cfc4b25279d3eb1a3b21c55895fe186407
 const Addnew = (props) => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');

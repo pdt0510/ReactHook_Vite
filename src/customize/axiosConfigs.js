@@ -8,7 +8,14 @@ const getAllUsersApi = async (url, ctrlOpt) => {
 	return result.data;
 };
 
-export const getAllUserFn = (url) => {
+
+const getAllUsers = async (url, ctrlOpt) => {
+	const result = await axios.get(url, ctrlOpt);
+
+	return result.data;
+};
+
+export const getAllUserApi = (url) => {
 	const [data, setData] = useState([]);
 	const [isError, setError] = useState(true);
 

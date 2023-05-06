@@ -34,10 +34,18 @@ export const Userinfo = () => {
 
 const url = 'https://jsonplaceholder.typicode.com/users';
 const ApiAccess = (props) => {
+<<<<<<< HEAD
 	let { data, isError } = axiosConfigs.getAllUserFn(url);
 	const [addnew, setAddnew] = useState(false);
 	const [newData, setNewData] = useState([]);
 
+=======
+	let { data, isError } = axiosConfigs.getAllUserApi(url);
+	const [addnew, setAddnew] = useState(false);
+	const [newData, setNewData] = useState([]);
+
+	// 35ms47ss
+>>>>>>> 77f265cfc4b25279d3eb1a3b21c55895fe186407
 	if (newData.length === 0) {
 		if (data.length) {
 			setNewData(data);
@@ -69,17 +77,33 @@ const ApiAccess = (props) => {
 		setAddnew(!addnew);
 	};
 
+<<<<<<< HEAD
+=======
+	// 35ms47ss
+>>>>>>> 77f265cfc4b25279d3eb1a3b21c55895fe186407
 	const handleDelFn = (id) => {
 		setNewData(newData.filter((item) => item.id !== id));
 	};
 
+<<<<<<< HEAD
+=======
+	// 35ms47ss
+>>>>>>> 77f265cfc4b25279d3eb1a3b21c55895fe186407
 	const handleAddnewFn = (data) => {
 		const newItem = {
 			id: newData[newData.length - 1].id + 1,
 			...data,
 		};
 
+<<<<<<< HEAD
 		setNewData([...newData, newItem]);
+=======
+		// const newData2 = newData.push(newItem); //err, v36xx1
+		// console.log('newData2 ---', newData2);
+		// setNewData(newData2);
+
+		setNewData([...newData, newItem]); //OK, v36xx1
+>>>>>>> 77f265cfc4b25279d3eb1a3b21c55895fe186407
 		toggleAddnew();
 	};
 

@@ -2,7 +2,11 @@ import './Nav.scss';
 import { Link, useLocation } from 'react-router-dom';
 import * as routeSupp from './../../utilities/routeSupp';
 
+<<<<<<< HEAD
 const Nav = (props) => {
+=======
+const Nav = () => {
+>>>>>>> 77f265cfc4b25279d3eb1a3b21c55895fe186407
 	const renderLinks = (list) => {
 		const location = useLocation();
 		return list.map((item, idx) => {
